@@ -1,0 +1,96 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #585555 ;
+    
+}
+
+.my-cal{
+    width: 100%;
+    height: 230px;
+    justify-content: center;
+    font-size: 50px;
+    display: grid;
+    letter-spacing: 50px;
+    color: #a7e835;
+    background:#433e3e;
+
+    
+    
+}
+h1{
+    cursor: pointer;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(115, 209, 128);
+    outline: none;
+    background-color: #a7e835;
+    border-radius: 20px;
+    
+}
+
+.calculator-grid>button:active {
+    
+    transform: scale(0.9);
+    box-shadow:0 5px 10px rgb(252, 255, 252);
+    color:white;
+    border-radius: 20px;
+    
+}
+
+.calculator-grid>button:hover{
+    background: #BCFD4C;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1/-1;
+    background-color: #BCFD4C;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius:20px ;
+    margin-bottom: 8px;
+}
+
+.output .previous-operand {
+    color: #302c2c;
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: #585555;
+    font-size: 2.5rem;
+}
+@media only screen and (max-width: 1200px) {
+    .my-cal{
+        font-size: 34px;
+    }
+}
