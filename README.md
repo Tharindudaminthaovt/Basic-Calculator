@@ -23,3 +23,4 @@ Try Calculator-
 To use the calculator, simply open the index.html file in your web browser.
 
 For more information visit: https://cybersphere-s.blogspot.com/2023/04/calculator-using-htmlcss-java-scriptp-1.html
+[Click here to see more information](https://cybersphere-s.blogspot.com/2023/04/calculator-using-htmlcss-java-scriptp-1.html)
