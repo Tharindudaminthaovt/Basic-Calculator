@@ -8,24 +8,21 @@
 body {
     padding: 0;
     margin: 0;
-    background: #585555 ;
-    
+    background: #585555;
+    overflow: hidden; 
 }
 
-.my-cal{
+.my-cal {
     width: 100%;
-    height: 150px;
     justify-content: center;
     font-size: 50px;
     display: grid;
     letter-spacing: 50px;
     color: #a7e835;
-    background:#433e3e;
-
-    
-    
+    background: #433e3e;
 }
-h1{
+
+h1 {
     cursor: pointer;
 }
 
@@ -33,33 +30,29 @@ h1{
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 150px); 
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    position:fixed;
-    
+    position: fixed;
 }
 
-.calculator-grid>button {
+.calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid rgb(115, 209, 128);
     outline: none;
     background-color: #a7e835;
     border-radius: 20px;
-    
 }
 
-.calculator-grid>button:active {
-    
+.calculator-grid > button:active {
     transform: scale(0.9);
-    box-shadow:0 5px 10px rgb(252, 255, 252);
-    color:white;
+    box-shadow: 0 5px 10px rgb(252, 255, 252);
+    color: white;
     border-radius: 20px;
-    
 }
 
-.calculator-grid>button:hover{
+.calculator-grid > button:hover {
     background: #BCFD4C;
 }
 
@@ -68,7 +61,7 @@ h1{
 }
 
 .output {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     background-color: #BCFD4C;
     display: flex;
     align-items: flex-end;
@@ -77,7 +70,7 @@ h1{
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-    border-radius:20px ;
+    border-radius: 20px;
     margin-bottom: 8px;
 }
 
@@ -90,8 +83,9 @@ h1{
     color: #585555;
     font-size: 2.5rem;
 }
+
 @media only screen and (max-width: 1200px) {
-    .my-cal{
+    .my-cal {
         font-size: 34px;
     }
 }
